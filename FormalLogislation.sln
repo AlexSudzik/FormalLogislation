@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormalLogislation", "FormalLogislation\FormalLogislation.csproj", "{C639F62C-58CB-428E-90AF-0DF3F21674D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C639F62C-58CB-428E-90AF-0DF3F21674D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C639F62C-58CB-428E-90AF-0DF3F21674D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C639F62C-58CB-428E-90AF-0DF3F21674D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C639F62C-58CB-428E-90AF-0DF3F21674D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4316284A-E459-4BFB-8FFD-51F6F52AD8A5}
+	EndGlobalSection
+EndGlobal
