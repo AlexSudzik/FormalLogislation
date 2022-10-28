@@ -20,33 +20,54 @@ namespace FormalLogislation
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string Captcha = "";
         public MainWindow()
         {
             InitializeComponent();
-            //Random rn = new Random();
-            //int numba1 = rn.Next(1, 8);
-            //Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
+            
+            //losowanie obrazka i prawidlowego hasla do niego
+            Random rn = new Random();
+            int numba1 = rn.Next(1, 8);
+            Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
+            if(numba1 == 1)
+            {
+                Captcha = "mxyxw";
+            }
+            if (numba1 == 2)
+            {
+                Captcha = "b5nmm";
+            }
+            if (numba1 == 3)
+            {
+                Captcha = "74853";
+            }
+            if (numba1 == 4)
+            {
+                Captcha = "cg5dd";
+            }
+            if (numba1 == 5)
+            {
+                Captcha = "x3deb";
+            }
+            if (numba1 == 6)
+            {
+                Captcha = "befbd";
+            }
+            if (numba1 == 7)
+            {
+                Captcha = "rc7gb3";
+            }
 
         }
-       
-        Random rn = new Random();
-        //int numba1 = rn.Next(1, 8);
         
 
-        
+
         private void zaloguj_Click(object sender, RoutedEventArgs e)
         {
-            if(uzytkownik.Text == "admin" && haslo.Text == "Qwerty1@34")
+            //sprawdzanie prawidlowosci danych
+            if(uzytkownik.Text == "admin" && haslo.Text == "Qwerty1@34" && obrazek_haslo.Text == Captcha)
             {
-                if (1 == 1)
-                {
-
-
-                }
-
-
-
-
+                //odpala drugie okno
                 SecondaryWindow objSecondaryWindow = new SecondaryWindow();
                 this.Visibility = Visibility.Hidden;
                 objSecondaryWindow.Show();
@@ -54,18 +75,82 @@ namespace FormalLogislation
             }
             else
             {
-                uzytkownik.Text = "";
-                haslo.Text = "";
-                obrazek_haslo.Text = "";
+                //błędne odpowiedzi przy logowaniu
+                uzytkownik.Text = "błąd";
+                haslo.Text = "błąd";
+                obrazek_haslo.Text = "błąd";
+
+                //ponowne losowanie captch'y
+                Random rn = new Random();
+                int numba1 = rn.Next(1, 8);
+                Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
+                if (numba1 == 1)
+                {
+                    Captcha = "mxyxw";
+                }
+                if (numba1 == 2)
+                {
+                    Captcha = "b5nmm";
+                }
+                if (numba1 == 3)
+                {
+                    Captcha = "74853";
+                }
+                if (numba1 == 4)
+                {
+                    Captcha = "cg5dd";
+                }
+                if (numba1 == 5)
+                {
+                    Captcha = "x3deb";
+                }
+                if (numba1 == 6)
+                {
+                    Captcha = "befbd";
+                }
+                if (numba1 == 7)
+                {
+                    Captcha = "rc7gb3";
+                }
             }
             
         }
+
+
         private void losujnowy_click(object sender, RoutedEventArgs e)
         {
-            //Zdjecie.Source = new BitmapImage(new Uri(@"images\1.png", UriKind.Relative));
-            int numba = rn.Next(1, 8);
-            Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba.ToString() + ".png", UriKind.Relative)) ;
-
+            //losowanie obrazka i prawidlowego hasla do niego, po kliknieciu guzika "losuj nowy"
+            Random rn = new Random();
+            int numba1 = rn.Next(1, 8);
+            Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
+            if (numba1 == 1)
+            {
+                Captcha = "mxyxw";
+            }
+            if (numba1 == 2)
+            {
+                Captcha = "b5nmm";
+            }
+            if (numba1 == 3)
+            {
+                Captcha = "74853";
+            }
+            if (numba1 == 4)
+            {
+                Captcha = "cg5dd";
+            }
+            if (numba1 == 5)
+            {
+                Captcha = "x3deb";
+            }
+            if (numba1 == 6)
+            {
+                Captcha = "befbd";
+            }
+            if (numba1 == 7)
+            {
+                Captcha = "rc7gb3";
+            }
 
         }
     }

@@ -17,5 +17,6 @@
         <Button x:Name="zaloguj" Content="Zaloguj" HorizontalAlignment="Left" Margin="586,289,0,0" VerticalAlignment="Top" Width="105" Height="33" FontSize="18" FontWeight="Bold" Click="zaloguj_Click"/>
         <Image x:Name="Zdjecie" HorizontalAlignment="Right" Height="122" Margin="0,264,484,0" VerticalAlignment="Top" Width="161" Source="images\1.png"/>
         <TextBlock x:Name="losujnowy" HorizontalAlignment="Left" Margin="357,300,0,0" TextWrapping="Wrap" Text="losuj nowy" VerticalAlignment="Top" TextDecorations="Underline" FontStyle="Italic" PreviewMouseDown="losujnowy_click"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="423,180,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
