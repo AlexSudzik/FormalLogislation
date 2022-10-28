@@ -35,6 +35,7 @@ namespace FormalLogislation
                 SecondaryWindow objSecondaryWindow = new SecondaryWindow();
                 this.Visibility = Visibility.Hidden;
                 objSecondaryWindow.Show();
+
             }
             else
             {

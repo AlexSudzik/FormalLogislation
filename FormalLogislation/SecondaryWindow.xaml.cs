@@ -22,6 +22,18 @@ namespace FormalLogislation
         public SecondaryWindow()
         {
             InitializeComponent();
+            ComboBox1.Items.Add("Imię");
+            ComboBox1.Items.Add("Nazwisko");
+            ComboBox1.Items.Add("Klasa");
+            ComboBox2.Items.Add("zawiea");
+            ComboBox2.Items.Add("rozpoczyna się od");
+            
+
         }
+
+        
+
+
+
     }
 }
