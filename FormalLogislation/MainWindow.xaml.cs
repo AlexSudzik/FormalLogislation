@@ -23,15 +23,30 @@ namespace FormalLogislation
         public MainWindow()
         {
             InitializeComponent();
-        }
+            //Random rn = new Random();
+            //int numba1 = rn.Next(1, 8);
+            //Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
 
+        }
+       
+        Random rn = new Random();
+        //int numba1 = rn.Next(1, 8);
+        
+
+        
         private void zaloguj_Click(object sender, RoutedEventArgs e)
         {
-            //Zdjecie.Source = new BitmapImage(new Uri(@"images\1.png", UriKind.Relative));
-
-
             if(uzytkownik.Text == "admin" && haslo.Text == "Qwerty1@34")
             {
+                if (1 == 1)
+                {
+
+
+                }
+
+
+
+
                 SecondaryWindow objSecondaryWindow = new SecondaryWindow();
                 this.Visibility = Visibility.Hidden;
                 objSecondaryWindow.Show();
@@ -44,6 +59,14 @@ namespace FormalLogislation
                 obrazek_haslo.Text = "";
             }
             
+        }
+        private void losujnowy_click(object sender, RoutedEventArgs e)
+        {
+            //Zdjecie.Source = new BitmapImage(new Uri(@"images\1.png", UriKind.Relative));
+            int numba = rn.Next(1, 8);
+            Zdjecie.Source = new BitmapImage(new Uri(@"images\" + numba.ToString() + ".png", UriKind.Relative)) ;
+
+
         }
     }
 }
