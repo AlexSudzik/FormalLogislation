@@ -24,7 +24,10 @@ namespace FormalLogislation
         public MainWindow()
         {
             InitializeComponent();
-            
+
+            uzytkownik.Text = "admin";
+            haslo.Password = "Qwerty1@34";
+
             //losowanie obrazka i prawidlowego hasla do niego
             Random rn = new Random();
             int numba1 = rn.Next(1, 8);
@@ -65,7 +68,7 @@ namespace FormalLogislation
         private void zaloguj_Click(object sender, RoutedEventArgs e)
         {
             //sprawdzanie prawidlowosci danych
-            if(uzytkownik.Text == "admin" && haslo.Text == "Qwerty1@34" && obrazek_haslo.Text == Captcha)
+            if(uzytkownik.Text == "admin" && haslo.Password == "Qwerty1@34" && obrazek_haslo.Text == Captcha)
             {
                 //odpala drugie okno
                 SecondaryWindow objSecondaryWindow = new SecondaryWindow();
@@ -76,9 +79,9 @@ namespace FormalLogislation
             else
             {
                 //błędne odpowiedzi przy logowaniu
-                uzytkownik.Text = "błąd";
-                haslo.Text = "błąd";
-                obrazek_haslo.Text = "błąd";
+                uzytkownik.Text = "";
+                haslo.Password = "";
+                obrazek_haslo.Text = "";
 
                 //ponowne losowanie captch'y
                 Random rn = new Random();

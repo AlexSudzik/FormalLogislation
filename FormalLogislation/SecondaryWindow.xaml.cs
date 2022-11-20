@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace FormalLogislation
 {
@@ -31,9 +32,21 @@ namespace FormalLogislation
 
         }
 
-        
+        private void dodaj_Click(object sender, RoutedEventArgs e)
+        {
+            string path = (@"C:\Users\Alex Sudzik\source\repos\AlexSudzik\FormalLogislation\FormalLogislation\images\uczen.txt");
+            //File.WriteAllText(@"uczen.txt", SecondaryImie.Text);
+            //(@"images\" + numba1.ToString() + ".png", UriKind.Relative));
+            //File.AppendAllText(@"uczen.txt", SecondaryImie.Text.ToString() + " " + SecondaryNazwisko.Text.ToString() + " " + SecondaryKlasa.Text.ToString() + Environment.NewLine);
+            //File.AppendAllText(@"C:\Users\Alex Sudzik\source\repos\AlexSudzik\FormalLogislation\FormalLogislation\uczen.txt", SecondaryImie.Text.ToString() + " " + SecondaryNazwisko.Text.ToString() + " " + SecondaryKlasa.Text.ToString() + Environment.NewLine);
+            File.AppendAllText(path, SecondaryImie.Text.ToString() + ", " + SecondaryNazwisko.Text.ToString() + ", " + SecondaryKlasa.Text.ToString() + Environment.NewLine);
+            
 
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }
